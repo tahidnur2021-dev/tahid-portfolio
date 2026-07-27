@@ -1,0 +1,99 @@
+body {
+                    background-color: #09090b;
+                    color: #f4f4f5;
+                    font-family: 'Plus Jakarta Sans', sans-serif;
+                    overflow-x: hidden;
+                }
+                /* Glassmorphism Effects - Monochrome Dark */
+                .glass-panel {
+                    background: rgba(24, 24, 27, 0.75);
+                    backdrop-filter: blur(12px);
+                    -webkit-backdrop-filter: blur(12px);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                }
+                .glass-panel:hover {
+                    border-color: rgba(255, 255, 255, 0.3);
+                    box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+                }
+                .glass-nav {
+                    background: rgba(9, 9, 11, 0.88);
+                    backdrop-filter: blur(16px);
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                }
+                /* Gradient Metallic / Silver Glow Texts */
+                .text-gradient-silver {
+                    background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                .text-gradient-white {
+                    background: linear-gradient(135deg, #ffffff 0%, #e4e4e7 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                /* Pulse Animation for Nanoscale Node */
+                @keyframes pulseGlow {
+                    0%, 100% { opacity: 0.4; transform: scale(1); }
+                    50% { opacity: 0.9; transform: scale(1.05); }
+                }
+                .animate-pulse-glow {
+                    animation: pulseGlow 4s infinite ease-in-out;
+                }
+                /* Custom Scrollbar */
+                ::-webkit-scrollbar {
+                    width: 8px;
+                }
+                ::-webkit-scrollbar-track {
+                    background: #09090b;
+                }
+                ::-webkit-scrollbar-thumb {
+                    background: #27272a;
+                    border-radius: 4px;
+                }
+                ::-webkit-scrollbar-thumb:hover {
+                    background: #71717a;
+                }
+              @media (min-width: 1024px) {
+            body {
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 2rem !important;
+            }
+            h2 {
+                font-size: 1.5rem !important;
+            }
+            h3 {
+                font-size: 1.25rem !important;
+            }
+            p {
+                font-size: 1rem;
+            }
+            }
+.device-card-title {
+    font-size: 10px !important;
+    line-height: 1.25 !important;
+}
+             @keyframes semiconductor-scan {
+                    0% {
+                        top: 8%;
+                        opacity: 0;
+                    }
+                    15% {
+                        opacity: 1;
+                    }
+                    50% {
+                        top: 50%;
+                        opacity: 1;
+                    }
+                    85% {
+                        opacity: 1;
+                    }
+                    100% {
+                        top: 88%;
+                        opacity: 0;
+                    }
+                }
+                .animate-semiconductor-scan {
+                    animation: semiconductor-scan 2.8s linear infinite;
+                }

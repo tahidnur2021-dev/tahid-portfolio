@@ -1,0 +1,2576 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tahid Nur Rahman | Avionics & Semiconductor VLSI Research Portfolio</title>
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com">
+        </script>
+        <!-- FontAwesome Icons CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+                <script src="tailwind-config.js"></script>
+                <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body class="relative min-h-screen text-zinc-100 antialiased selection:bg-white selection:text-black">
+        <!-- Interactive Canvas Background -->
+        <canvas id="semiconductorCanvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0">
+        </canvas>
+        <!-- Header Navigation -->
+        <header class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+                <!-- Brand Logo -->
+                <!-- Brand Logo -->
+                <a href="#hero" class="flex items-center gap-3 group">
+                    <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4r4ciAWLvZnE0LmY2Cx9wzdHxKp1pOJTJkW1EUcnr6MAlaQyfRKxeM2V17aSIWMuZ8fAwPl4LtrpEiFbO3n_aYRsPt9vpyiAFX-BYtGonpjw3vTQHZJURRI8jQLcrqJGcX6NOtIfHcoQadjmbUOJFz_K0hsS6PQykZH2XaTw1quhacbBZC92oE8RAw2I/w252-h320/11.png"
+                    alt="Tahid Nur Rahman"
+                    class="w-10 h-10 rounded-xl object-cover object-top shadow-lg shadow-white/10 group-hover:scale-105 transition-transform"
+                    >
+                    <div>
+                        <span class="text-base font-bold tracking-tight text-white block leading-none">Tahid Nur Rahman</span>
+                    </div>
+                </a>
+                <!-- Desktop Nav Menu -->
+                <nav class="hidden md:flex items-center gap-6 font-medium text-sm text-zinc-300">
+                    <a href="#about" class="hover:text-white transition-colors">About</a>
+                  <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+                  <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+                    <a href="#education" class="hover:text-white transition-colors">Education</a>
+                  <a href="#achievements" class="hover:text-white transition-colors">Achievements</a>
+                  <a href="#gallery" class="text-zinc-300 hover:text-white transition-colors">Gallery</a>
+                </nav>
+                <!-- Action CTA Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="#contact" class="px-4 py-2 rounded-lg bg-white text-zinc-950 font-semibold text-xs uppercase tracking-wider hover:bg-zinc-200 transition-all shadow-md flex items-center gap-2">
+                        <i class="fa-solid me-1 fa-envelope">
+                        </i>
+                        Contact Me
+                    </a>
+                </div>
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-zinc-300 hover:text-white text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars">
+                    </i>
+                </button>
+            </div>
+           <!-- Mobile Drawer Menu -->
+<div
+    id="mobileMenu"
+    class="hidden md:hidden bg-zinc-900 border-b border-zinc-800 px-6 py-4 space-y-3 font-medium text-sm"
+>
+    <a href="#about" class="block text-zinc-300 hover:text-white transition-colors">
+        About
+    </a>
+
+    <a href="#experience" class="block text-zinc-300 hover:text-white transition-colors">
+        Experience
+    </a>
+
+    <a href="#skills" class="block text-zinc-300 hover:text-white transition-colors">
+        Skills
+    </a>
+
+    <a href="#education" class="block text-zinc-300 hover:text-white transition-colors">
+        Education
+    </a>
+
+    <a href="#achievements" class="block text-zinc-300 hover:text-white transition-colors">
+        Achievements
+    </a>
+
+    <a href="#gallery" class="block text-zinc-300 hover:text-white transition-colors">
+        Gallery
+    </a>
+</div>
+        </header>
+        <section id="hero"
+        class="relative min-h-screen pt-28 pb-10 md:pt-32 md:pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10 flex items-center">
+            <div class="grid w-full grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                <!-- Left Hero Content -->
+                <div class="lg:col-span-8 space-y-6">
+                    <!-- Status Badge -->
+                    <!-- Animated Status Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel text-xs font-code text-zinc-200 border border-zinc-700">
+                        <span class="w-2 h-2 rounded-full bg-white animate-ping">
+                        </span>
+                        <span class="relative h-4 w-56 overflow-hidden">
+                            <span id="heroRoleText"
+                            class="absolute inset-0 whitespace-nowrap transition-all duration-500">Avionics Engineer</span>
+                        </span>
+                    </div>
+                    <!-- Main Heading -->
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Tahid Nur
+                        <span class="text-gradient-silver">Rahman</span>
+                    </h1>
+                    <p class="mt-3 text-sm sm:text-base font-medium text-zinc-300 tracking-wide">Avionics Engineer | Semiconductor Device &amp; VLSI Enthusiast</p>
+                    <!-- Academic Bio Abstract -->
+                    <p class="text-zinc-400 text-xs sm:text-sm max-w-2xl leading-relaxed">
+                        I am an Avionics Engineering graduate with a strong academic and research background in semiconductor device modeling, electronic systems, and computational simulation. My work focuses on nanoscale transistors, including FinFETs and NC-FETs, as well as perovskite photovoltaic devices. I have experience using Silvaco TCAD, SCAPS-1D, Ansys Lumerical, MATLAB, and machine learning-assisted methods for device analysis, parameter optimization, and performance evaluation. My long-term goal is to pursue advanced research in semiconductor devices, low-power electronics, and emerging technologies for future integrated circuits and aerospace applications.
+                    </p>
+                    <!-- Key Metrics Cards -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3">
+
+    <div class="glass-panel p-3 rounded-lg border border-zinc-800 text-center">
+        <div class="text-xl font-bold font-code text-white">
+            3.71
+        </div>
+
+        <div class="text-[10px] text-zinc-400 font-medium uppercase mt-1">
+            B.Sc CGPA
+        </div>
+    </div>
+
+    <div class="glass-panel p-3 rounded-lg border border-zinc-800 text-center">
+        <div class="text-xl font-bold font-code text-zinc-200">
+            04
+        </div>
+
+        <div class="text-[10px] text-zinc-400 font-medium uppercase mt-1">
+            Publications
+        </div>
+    </div>
+
+    <div class="glass-panel p-3 rounded-lg border border-zinc-800 text-center">
+        <div class="text-xl font-bold font-code text-zinc-300">
+            12+
+        </div>
+
+        <div class="text-[10px] text-zinc-400 font-medium uppercase mt-1">
+            CAD &amp; TCAD Tools
+        </div>
+    </div>
+
+    <div class="glass-panel p-3 rounded-lg border border-zinc-800 text-center">
+        <div class="text-xl font-bold font-code text-white">
+            Top 5
+        </div>
+
+        <div class="text-[10px] text-zinc-400 font-medium uppercase mt-1">
+            AAUB Scholar
+        </div>
+    </div>
+
+</div>
+                   <!-- Action Buttons -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 w-full">
+
+    <a
+        href="#publications"
+        class="w-full justify-center px-5 py-3 rounded-xl bg-white text-zinc-950 font-bold text-sm hover:bg-zinc-200 transition-all shadow-lg flex items-center gap-2"
+    >
+        <i class="fa-solid fa-book-bookmark"></i>
+        Explore Publications
+    </a>
+
+    <a
+        href="#projects"
+        class="w-full justify-center px-5 py-3 rounded-xl glass-panel text-white font-semibold text-sm hover:bg-zinc-800 transition-all border border-zinc-700 flex items-center gap-2"
+    >
+        <i class="fa-solid fa-microchip"></i>
+        View Research Projects
+    </a>
+
+    <a
+        href="https://drive.google.com/uc?export=download&amp;id=15KWll-oXYVS0Hqcyua-wjasj5dZCzEHL"
+        class="w-full justify-center px-5 py-3 rounded-xl glass-panel text-zinc-300 hover:text-white transition-all border border-zinc-700 flex items-center gap-2 text-sm"
+    >
+        <i class="fa-solid fa-download"></i>
+        Download CV
+    </a>
+
+</div>
+                    <!-- Bottom Alignment Line -->
+                    <div class="pt-2 border-b border-zinc-800/80">
+                    </div>
+                </div>
+                <!-- Right Profile and Transistor Animation Column -->
+                <div class="lg:col-span-4 space-y-5">
+                    <!-- Profile Image Card -->
+                   <div class="relative w-full max-w-[260px] mx-auto rounded-xl glass-panel p-2.5 border border-zinc-700 overflow-hidden group shadow-xl transition-all duration-300 hover:border-zinc-400">
+
+    <div class="relative h-[250px] xl:h-[280px] rounded-lg overflow-hidden bg-zinc-900 border border-zinc-800">
+
+        <img
+            id="profileImage"
+            src="Photos\11.png"
+            alt="Tahid Nur Rahman Profile Picture"
+            class="w-full h-full object-cover object-top filter grayscale contrast-110 group-hover:scale-105 transition-all duration-500"
+        >
+
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+
+        <div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-[10px] font-code text-white bg-zinc-950/85 backdrop-blur-md px-2.5 py-1.5 rounded-md border border-zinc-800">
+
+            <span class="flex items-center gap-1.5 font-bold">
+                <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                Tahid Nur Rahman
+            </span>
+
+            <span class="relative w-20 h-3.5 overflow-hidden text-right">
+                <span
+                    id="rotatingSpecialization"
+                    class="absolute inset-0 text-zinc-400 text-[8px] whitespace-nowrap transition-all duration-500"
+                >
+                    Avionics
+                </span>
+            </span>
+
+        </div>
+
+    </div>
+</div>
+<!-- Animated Transistor Card -->
+                    <div class="relative w-full max-w-[260px] mx-auto rounded-xl glass-panel p-4 border border-zinc-800 overflow-hidden flex flex-col justify-between group shadow-xl">
+
+                        <!-- Background Effect -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-white/5 via-zinc-500/5 to-transparent pointer-events-none"></div>
+
+                        <!-- Top Tech Bar -->
+                        <div class="flex items-center justify-between gap-2 text-[9px] font-code text-zinc-300 z-10">
+                            <span class="flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+                                SILVACO TCAD / DEVICE MODELING
+                            </span>
+
+                            <span class="text-zinc-500 whitespace-nowrap">
+                                5nm - 2nm FE
+                            </span>
+                        </div>
+
+                        <!-- Animated Semiconductor Simulation -->
+                        <div class="py-3 text-center z-10 relative">
+
+                            <!-- Orbit Area -->
+                            <div class="relative w-20 h-20 mx-auto flex items-center justify-center">
+
+                                <!-- Outer Orbit Ring -->
+                                <div
+                                    class="absolute inset-0 rounded-full border border-dashed border-zinc-500 animate-spin"
+                                    style="animation-duration: 18s;"
+                                ></div>
+
+                                <!-- Inner Orbit Ring -->
+                                <div
+                                    class="absolute inset-2 rounded-full border border-zinc-600 animate-spin"
+                                    style="animation-duration: 10s; animation-direction: reverse;"
+                                ></div>
+
+                                <!-- Moving Outer Dot -->
+                                <div
+                                    class="absolute inset-0 animate-spin"
+                                    style="animation-duration: 6s;"
+                                >
+                                    <span class="absolute top-0 left-1/2 -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-white shadow-lg shadow-white/50"></span>
+                                </div>
+
+                                <!-- Moving Inner Dot -->
+                                <div
+                                    class="absolute inset-2 animate-spin"
+                                    style="animation-duration: 4s; animation-direction: reverse;"
+                                >
+                                    <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-zinc-300 shadow-lg shadow-white/40"></span>
+                                </div>
+
+                                <!-- Semiconductor Core -->
+                                <div class="relative w-12 h-12 rounded-xl bg-gradient-to-tr from-zinc-100 via-zinc-400 to-zinc-700 flex items-center justify-center shadow-xl shadow-white/10 overflow-hidden">
+
+                                    <!-- Animated Scan Line -->
+                                    <div class="absolute left-0 right-0 h-0.5 bg-white/70 shadow-lg shadow-white/40 animate-semiconductor-scan"></div>
+
+                                    <!-- Core Icon -->
+                                    <i class="fa-solid fa-microchip text-xl text-black z-10 animate-pulse"></i>
+                                </div>
+
+                                <!-- Signal Bars -->
+                                <span class="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-0.5 bg-zinc-500 animate-pulse"></span>
+                                <span class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-0.5 bg-zinc-500 animate-pulse"></span>
+                                <span class="absolute top-0 left-1/2 -translate-x-1/2 w-0.5 h-4 bg-zinc-500 animate-pulse"></span>
+                                <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0.5 h-4 bg-zinc-500 animate-pulse"></span>
+                            </div>
+
+                            <!-- Device Title -->
+                            <h3 class="device-card-title font-bold text-white mt-2">
+                                Nanoscale FinFET &amp; NC-FET
+                            </h3>
+
+                            <p class="text-[8px] text-zinc-400 font-code mt-1 leading-relaxed">
+                                Short-Channel &amp; Ferroelectric Device Analysis
+                            </p>
+                        </div>
+
+                        <!-- Bottom Specs Indicator -->
+                        <div class="bg-zinc-950/80 rounded-lg p-2.5 border border-zinc-800 text-[8px] font-code z-10 flex justify-between items-center text-zinc-300">
+                            <div>
+                                <span class="text-zinc-500 block text-[7px]">
+                                    CURRENT FOCUS
+                                </span>
+
+                                <span class="text-white">
+                                    Low-Power FinFET &amp; NC-FET Modeling
+                                </span>
+                            </div>
+
+                            <i
+                                class="fa-solid fa-atom text-white text-sm animate-spin"
+                                style="animation-duration: 8s;"
+                            ></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+       
+        <!-- Profile & Research Interests Section -->
+        <section id="about" class="min-h-screen scroll-mt-24 py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Academic Profile Summary -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-zinc-400 font-code text-xs tracking-widest uppercase">
+                        <i class="fa-solid fa-user-graduate">
+                        </i>
+                         Profile
+                    </div>
+                    <h2 class="text-3xl font-extrabold text-white">
+                       About
+                        <span class="text-gradient-silver">Me</span>
+                        
+                    </h2>
+                    <div class="glass-panel p-6 rounded-2xl border border-zinc-800 space-y-4 text-zinc-300 text-sm sm:text-base leading-relaxed">
+                        <p>My interest in semiconductor devices developed during my undergraduate studies in Avionics Engineering, where I built a foundation in electronic circuits, VLSI design, control systems, signal processing, and embedded technologies.</p>
+                        <p>Since 2023, I have been involved in simulation-based research on semiconductor and photovoltaic devices. My work includes nanoscale transistor modeling, defect and interface analysis, perovskite solar-cell optimization, automated dataset generation, and machine learning-assisted performance evaluation.</p>
+                        <p>I plan to pursue advanced graduate research in semiconductor device physics, low-power transistor architectures, TCAD-based modeling, and emerging electronic technologies for future integrated circuits and aerospace applications.</p>
+                    </div>
+                </div>
+                <!-- Research Interests Matrix -->
+                <div id="interests" class="lg:col-span-5 space-y-4">
+                    <div class="inline-flex items-center gap-2 text-zinc-400 font-code text-xs tracking-widest uppercase">
+                        <i class="fa-solid fa-atom">
+                        </i>
+                        Key Research Thrusts
+                    </div>
+                    <h2 class="text-2xl font-bold text-white">Primary Interests</h2>
+                    <div class="space-y-3">
+                        <div class="glass-panel p-4 rounded-xl border border-zinc-800 flex items-start gap-3 hover:border-zinc-500 transition-all">
+                            <div class="w-9 h-9 rounded-lg bg-zinc-800 text-white flex items-center justify-center shrink-0 text-base font-bold">01</div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Nanoscale Devices & NC-FETs</h4>
+                                <p class="text-xs text-zinc-400 mt-1">Negative Capacitance FETs, ferroelectric-gated MOSFETs, FinFET optimization & steep subthreshold slope devices.</p>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-4 rounded-xl border border-zinc-800 flex items-start gap-3 hover:border-zinc-500 transition-all">
+                            <div class="w-9 h-9 rounded-lg bg-zinc-800 text-white flex items-center justify-center shrink-0 text-base font-bold">02</div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">TCAD & Computational Modeling</h4>
+                                <p class="text-xs text-zinc-400 mt-1">Silvaco TCAD device characterization, defect density modeling, interface traps, and compact circuit modeling.</p>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-4 rounded-xl border border-zinc-800 flex items-start gap-3 hover:border-zinc-500 transition-all">
+                            <div class="w-9 h-9 rounded-lg bg-zinc-800 text-white flex items-center justify-center shrink-0 text-base font-bold">03</div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Perovskite & Optoelectronic PV</h4>
+                                <p class="text-xs text-zinc-400 mt-1">SCAPS-1D photovoltaic simulation, heterostructure design, CuGaO2 HTL, ZnO:SiC ETL, and tandem cell modeling.</p>
+                            </div>
+                        </div>
+                        <div class="glass-panel p-4 rounded-xl border border-zinc-800 flex items-start gap-3 hover:border-zinc-500 transition-all">
+                            <div class="w-9 h-9 rounded-lg bg-zinc-800 text-white flex items-center justify-center shrink-0 text-base font-bold">04</div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">ML-Assisted Device Optimization</h4>
+                                <p class="text-xs text-zinc-400 mt-1">Dataset generation via simulation scripts and machine learning algorithms for multi-parameter device performance tuning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  <!-- Publications Section -->
+<section
+    id="publications"
+    class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10 relative"
+>
+    <!-- Section Heading -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+            <div class="inline-flex items-center gap-2 text-zinc-400 font-code text-xs tracking-widest uppercase">
+                <i class="fa-solid fa-scroll"></i>
+                Research Output
+            </div>
+
+            <h2 class="text-3xl font-extrabold text-white mt-1">
+                Publications &amp; Manuscripts
+            </h2>
+        </div>
+
+        <div class="text-xs font-code text-zinc-400">
+            <span class="text-white font-bold">4</span>
+            Total Research Outputs
+        </div>
+    </div>
+
+    <!-- Two Column Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+
+        <!-- Journal Manuscripts Column -->
+        <div class="self-start">
+
+            <!-- Journal Column Heading -->
+            <div class="mb-5">
+                <div class="inline-flex items-center gap-2 text-zinc-400 font-code text-xs uppercase tracking-widest">
+                    <i class="fa-solid fa-book-open"></i>
+                    Journal Manuscripts
+                </div>
+
+                <h3 class="text-2xl font-bold text-white mt-1">
+                    Journal Research
+                </h3>
+            </div>
+
+            <!-- Journal Cards -->
+            <div class="space-y-4">
+
+                <!-- Journal Item 1 -->
+                <div class="glass-panel p-5 rounded-2xl border border-zinc-800 hover:border-zinc-500 transition-all relative group">
+
+                    <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+
+                        <span class="px-3 py-1 rounded-full bg-zinc-800 text-zinc-200 border border-zinc-700 text-[10px] font-code font-semibold flex items-center gap-1.5">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Submitted
+                        </span>
+
+                        <span class="text-[10px] font-code text-zinc-400">
+                            Advanced Theory and Simulations, 2026
+                        </span>
+
+                    </div>
+
+                    <h4 class="text-base font-bold text-white group-hover:text-zinc-200 transition-colors leading-snug">
+                        Performance Optimization of an Oxide Heterostructure
+                        Solar Cell with CuGaO₂ Delafossite HTL Using SCAPS-1D
+                        and Machine Learning
+                    </h4>
+
+                    <p class="text-[10px] text-zinc-400 font-code mt-2">
+                        <strong class="text-white">Tahid Nur Rahman</strong>,
+                        Samiul Sadek, et al.
+                    </p>
+
+                    <p class="text-zinc-300 text-xs mt-3 leading-relaxed">
+                        SCAPS-1D numerical modeling combined with predictive
+                        machine learning optimization for oxide heterostructure
+                        photovoltaic cells incorporating delafossite hole
+                        transport layers.
+                    </p>
+
+                    <div class="mt-4">
+                        <a
+                            href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZRr2erHXz4Y3COxj6-fm0NQfkE94OTrCL_PKMglCqpb6wPHHGEYVBp9X1tk-Y_Iu-ZKngy3Ni64wtiby23BJ4YFwZzgltqSK6KqTlWxHC3D51qrqYhTJWnsm8vweF5tqdSx_w8UfTkTgkd5KtVzjip2nFf01HTfp0tBrsJYRL6Df0ETW31WPB7Fn6ido/s320/ChatGPT%20Image%20Jul%2023,%202026,%2004_59_14%20AM.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white text-zinc-950 text-[10px] font-semibold hover:bg-zinc-200 transition-all"
+                        >
+                            <i class="fa-solid fa-eye"></i>
+                            View
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Journal Item 2 -->
+                <div class="glass-panel p-5 rounded-2xl border border-zinc-800 hover:border-zinc-500 transition-all relative group">
+
+                    <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+
+                        <span class="px-3 py-1 rounded-full bg-zinc-800 text-zinc-200 border border-zinc-700 text-[10px] font-code font-semibold flex items-center gap-1.5">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                            Under Review
+                        </span>
+
+                        <span class="text-[10px] font-code text-zinc-400">
+                            Solar Energy Materials and Solar Cells, 2026
+                        </span>
+
+                    </div>
+
+                    <h4 class="text-base font-bold text-white group-hover:text-zinc-200 transition-colors leading-snug">
+                        Defect- and Thickness-Driven Electrical and Impedance
+                        Behavior of Cs₃Bi₂I₉ and CsBi₃I₁₀:
+                        A Simulation Study
+                    </h4>
+
+                    <p class="text-[10px] text-zinc-400 font-code mt-2">
+                        Samiul Sadek,
+                        <strong class="text-white">Tahid Nur Rahman</strong>,
+                        et al.
+                    </p>
+
+                    <p class="text-zinc-300 text-xs mt-3 leading-relaxed">
+                        Investigates the electrical characterization, defect
+                        density impact, and impedance behavior of lead-free
+                        bismuth perovskite light absorbers using numerical
+                        simulations.
+                    </p>
+
+                    <div class="mt-4">
+                        <a
+                            href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZRr2erHXz4Y3COxj6-fm0NQfkE94OTrCL_PKMglCqpb6wPHHGEYVBp9X1tk-Y_Iu-ZKngy3Ni64wtiby23BJ4YFwZzgltqSK6KqTlWxHC3D51qrqYhTJWnsm8vweF5tqdSx_w8UfTkTgkd5KtVzjip2nFf01HTfp0tBrsJYRL6Df0ETW31WPB7Fn6ido/s320/ChatGPT%20Image%20Jul%2023,%202026,%2004_59_14%20AM.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white text-zinc-950 text-[10px] font-semibold hover:bg-zinc-200 transition-all"
+                        >
+                            <i class="fa-solid fa-eye"></i>
+                            View
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Journal Item 3 -->
+                <div class="glass-panel p-5 rounded-2xl border border-zinc-800 hover:border-zinc-500 transition-all relative group">
+
+                    <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+
+                        <span class="px-3 py-1 rounded-full bg-zinc-800 text-zinc-200 border border-zinc-700 text-[10px] font-code font-semibold flex items-center gap-1.5">
+                            <i class="fa-solid fa-hourglass-half"></i>
+                            Under Review
+                        </span>
+
+                        <span class="text-[10px] font-code text-zinc-400">
+                            Advanced Theory and Simulations, 2026
+                        </span>
+
+                    </div>
+
+                    <h4 class="text-base font-bold text-white group-hover:text-zinc-200 transition-colors leading-snug">
+                        Assessing ZnO:SiC as a Universal Electron Transport
+                        Layer for High-Performance Perovskite Solar Cells:
+                        A Comparative SCAPS-1D Simulation Study
+                    </h4>
+
+                    <p class="text-[10px] text-zinc-400 font-code mt-2">
+                        Md. Rony Prodhan,
+                        <strong class="text-white">Tahid Nur Rahman</strong>,
+                        et al.
+                    </p>
+
+                    <p class="text-zinc-300 text-xs mt-3 leading-relaxed">
+                        A comparative evaluation of silicon carbide-doped zinc
+                        oxide as an electron transport layer across multiple
+                        perovskite photovoltaic device configurations.
+                    </p>
+
+                    <div class="mt-4">
+                        <a
+                            href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZRr2erHXz4Y3COxj6-fm0NQfkE94OTrCL_PKMglCqpb6wPHHGEYVBp9X1tk-Y_Iu-ZKngy3Ni64wtiby23BJ4YFwZzgltqSK6KqTlWxHC3D51qrqYhTJWnsm8vweF5tqdSx_w8UfTkTgkd5KtVzjip2nFf01HTfp0tBrsJYRL6Df0ETW31WPB7Fn6ido/s320/ChatGPT%20Image%20Jul%2023,%202026,%2004_59_14%20AM.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white text-zinc-950 text-[10px] font-semibold hover:bg-zinc-200 transition-all"
+                        >
+                            <i class="fa-solid fa-eye"></i>
+                            View
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Conference Publications Column -->
+        <div class="self-start h-fit">
+
+            <!-- Conference Column Heading -->
+            <div class="mb-5">
+                <div class="inline-flex items-center gap-2 text-zinc-400 font-code text-xs uppercase tracking-widest">
+                    <i class="fa-solid fa-users"></i>
+                    Conference Publications
+                </div>
+
+                <h3 class="text-2xl font-bold text-white mt-1">
+                    Conference Research
+                </h3>
+            </div>
+
+            <!-- Conference Card -->
+            <div class="glass-panel p-5 rounded-2xl border border-zinc-800 hover:border-zinc-500 transition-all relative group">
+
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+
+                    <span class="px-3 py-1 rounded-full bg-zinc-100 text-zinc-950 text-[10px] font-code font-bold flex items-center gap-1.5">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Published
+                    </span>
+
+                    <span class="text-[10px] font-code text-zinc-400">
+                        ICEI 2026 &bull; Abstract ID: ECS06-116
+                    </span>
+
+                </div>
+
+                <h4 class="text-base font-bold text-white group-hover:text-zinc-200 transition-colors leading-snug">
+                    Startup Performance of UAV BLDC Motor Drives Using
+                    Soft-Start Under Open-Loop Control
+                </h4>
+
+                <p class="text-[10px] text-zinc-400 font-code mt-2">
+                    <strong class="text-white">Tahid Nur Rahman</strong>,
+                    A. K. M. Mohitul Hassan, et al.
+                </p>
+
+                <p class="text-zinc-300 text-xs mt-3 leading-relaxed">
+                    Published in the International Conference on Electronics
+                    and Informatics (ICEI), 2026. The study investigates
+                    soft-start control for reducing UAV BLDC motor current spikes.
+                </p>
+
+                <!-- Small Action Buttons -->
+                <div class="mt-4 flex flex-wrap gap-2">
+
+                    <!-- Paper -->
+                    <a
+                        href="https://drive.google.com/file/d/1GlsZg94HaI3oro_adaZl4pv-0b2H2qPI/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white text-zinc-950 text-[10px] font-semibold hover:bg-zinc-200 transition-all"
+                    >
+                        <i class="fa-solid fa-file-pdf"></i>
+                        Paper · Page 90
+                    </a>
+
+                    <!-- Certificate -->
+                    <a
+                        href="photos/icei-certificate.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-zinc-800 text-zinc-200 border border-zinc-700 text-[10px] font-semibold hover:border-zinc-500 hover:text-white transition-all"
+                    >
+                        <i class="fa-solid fa-certificate"></i>
+                        Certificate
+                    </a>
+
+                    <!-- Conference Photo -->
+                    <a
+                        href="photos/icei-certificate.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-zinc-800 text-zinc-200 border border-zinc-700 text-[10px] font-semibold hover:border-zinc-500 hover:text-white transition-all"
+                    >
+                        <i class="fa-solid fa-image"></i>
+                        Photo
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+  <!-- Projects Section -->
+<section
+    id="projects"
+    class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10 relative"
+>
+    <!-- Section Heading -->
+    <div class="mb-10">
+        <div class="inline-flex items-center gap-2 text-zinc-400 font-code text-xs tracking-widest uppercase">
+            <i class="fa-solid fa-diagram-project"></i>
+            Practical Demonstrations
+        </div>
+
+        <h2 class="text-3xl font-extrabold text-white mt-1">
+            Featured Technical Projects
+        </h2>
+    </div>
+
+    <!-- Three Project Cards -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+        <!-- ================================================== -->
+        <!-- Project Card 1: Cadence Virtuoso -->
+        <!-- ================================================== -->
+       <!-- Project Card 1: CMOS Inverter -->
+<div
+    class="glass-panel rounded-2xl border border-zinc-800
+           overflow-hidden hover:border-zinc-500
+           transition-all group"
+>
+    <!-- Project Images -->
+    <div class="p-3 space-y-3">
+
+        <!-- Main Image: Layout -->
+        <a
+            href="Photos/inverter layout.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block"
+        >
+            <div class="h-44 rounded-xl overflow-hidden bg-zinc-900 p-2">
+                <img
+                    src="Photos/inverter layout.jpg"
+                    alt="CMOS inverter physical layout"
+                    class="w-full h-full object-contain
+                           group-hover:scale-[1.02]
+                           transition-transform duration-500"
+                >
+            </div>
+        </a>
+
+        <!-- Schematic and Output -->
+        <div class="grid grid-cols-2 gap-3">
+
+            <!-- Schematic -->
+            <a
+                href="Photos/inverter schematic.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block"
+            >
+                <div class="h-24 rounded-lg overflow-hidden bg-zinc-900 p-1.5">
+                    <img
+                        src="Photos/inverter schematic.jpg"
+                        alt="CMOS inverter transistor-level schematic"
+                        class="w-full h-full object-contain
+                               hover:scale-105
+                               transition-transform duration-300"
+                    >
+                </div>
+            </a>
+
+            <!-- Simulation Output -->
+            <a
+                href="Photos/inverter output.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block"
+            >
+                <div class="h-24 rounded-lg overflow-hidden bg-zinc-900 p-1.5">
+                    <img
+                        src="Photos/inverter output.jpg"
+                        alt="CMOS inverter transient simulation response"
+                        class="w-full h-full object-contain
+                               hover:scale-105
+                               transition-transform duration-300"
+                    >
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Project Information -->
+    <div class="p-5 pt-2">
+
+        <!-- Project Title -->
+        <h3 class="text-base font-bold text-white leading-snug">
+            Design, Simulation and Physical Verification of a CMOS Inverter
+            Using Cadence Virtuoso
+        </h3>
+
+        <!-- Tags -->
+        <div class="mt-3 flex flex-wrap gap-2 font-code text-[9px] text-zinc-300">
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                Cadence Virtuoso
+            </span>
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                CMOS Inverter
+            </span>
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                Transient Analysis
+            </span>
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                Physical Layout
+            </span>
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                DRC / LVS
+            </span>
+
+        </div>
+
+        <!-- Short Description -->
+       <p class="text-zinc-400 text-xs mt-4 leading-relaxed">
+    A CMOS inverter was designed using PMOS and NMOS transistors in Cadence Virtuoso. 
+    The project included transistor-level schematic design, transient simulation, and 
+    physical layout implementation. The simulated output showed the expected inverted 
+    response, where a high input produced a low output and a low input produced a high 
+    output. The schematic, waveform, and layout were successfully completed and verified.
+</p>
+    </div>
+</div>
+
+        <!-- ================================================== -->
+        <!-- Project Card 2: FinFET and NC-FinFET -->
+        <!-- ================================================== -->
+        <!-- Project Card 2: FinFET -->
+<div
+    class="glass-panel rounded-2xl border border-zinc-800
+           overflow-hidden hover:border-zinc-500
+           transition-all group"
+>
+    <!-- Project Images -->
+    <div class="p-3 space-y-3">
+
+        <!-- Main Image: 3D FinFET Structure -->
+        <a
+            href="Photos/FinFET structure.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block"
+        >
+            <div class="h-44 rounded-xl overflow-hidden bg-zinc-900 p-2">
+                <img
+                    src="Photos/FinFET structure.jpg"
+                    alt="Three-dimensional FinFET device structure"
+                    class="w-full h-full object-contain
+                           group-hover:scale-[1.02]
+                           transition-transform duration-500"
+                >
+            </div>
+        </a>
+
+        <!-- Two Small Images -->
+        <div class="grid grid-cols-2 gap-3">
+
+            <!-- Doping Distribution -->
+            <a
+                href="Photos/FinFET ac.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block"
+            >
+                <div class="h-24 rounded-lg overflow-hidden bg-zinc-900 p-1.5">
+                    <img
+                        src="Photos/FinFET ac.jpg"
+                        alt="FinFET acceptor concentration distribution"
+                        class="w-full h-full object-contain
+                               hover:scale-105
+                               transition-transform duration-300"
+                    >
+                </div>
+            </a>
+
+            <!-- Transfer Characteristics -->
+            <a
+                href="Photos/FinFET idvd.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block"
+            >
+                <div class="h-24 rounded-lg overflow-hidden bg-zinc-900 p-1.5">
+                    <img
+                        src="Photos/FinFET idvd.jpg"
+                        alt="FinFET drain current versus gate voltage"
+                        class="w-full h-full object-contain
+                               hover:scale-105
+                               transition-transform duration-300"
+                    >
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Project Information -->
+    <div class="p-5 pt-2">
+
+        <!-- Project Title -->
+        <h3 class="text-base font-bold text-white leading-snug">
+            TCAD-Based Design and Electrical Characterization of a
+            Nanoscale FinFET Device
+        </h3>
+
+        <!-- Tags -->
+        <div class="mt-3 flex flex-wrap gap-2 font-code text-[9px] text-zinc-300">
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                Silvaco ATLAS
+            </span>
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                3D FinFET
+            </span>
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                Id–Vg Analysis
+            </span>
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                Subthreshold Slope
+            </span>
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                DIBL
+            </span>
+
+        </div>
+
+        <!-- Description with Results -->
+       <p class="text-zinc-400 text-xs mt-4 leading-relaxed">
+    A 20 nm FinFET was designed and simulated using Silvaco ATLAS. The device showed proper switching with V<sub>th</sub> ≈ 0.30 V, I<sub>on</sub> of 2.918 × 10<sup>−5</sup> A at 0.1 V and 3.214 × 10<sup>−4</sup> A at 1 V, while I<sub>off</sub> remained near 10<sup>−10</sup> A. The subthreshold slope was 76–76.8 mV/dec and DIBL was about 0.056 V/V.
+</p>
+
+    </div>
+</div>
+        <!-- ================================================== -->
+        <!-- Project Card 3: Tandem Solar Cell -->
+        <!-- ================================================== -->
+       <!-- Project Card 3: Tandem Solar Cell -->
+<div
+    class="glass-panel rounded-2xl border border-zinc-800
+           overflow-hidden hover:border-zinc-500
+           transition-all group"
+>
+    <!-- Project Images -->
+    <div class="p-3 space-y-3">
+
+        <!-- Main Image: Device Structure -->
+        <a
+            href="Photos/tandem.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block"
+        >
+            <div class="h-44 rounded-xl overflow-hidden bg-zinc-900 p-2">
+                <img
+                    src="Photos/tandem.jpg"
+                    alt="Perovskite silicon tandem solar cell structure"
+                    class="w-full h-full object-contain
+                           group-hover:scale-[1.02]
+                           transition-transform duration-500"
+                >
+            </div>
+        </a>
+
+        <!-- Two Small Images -->
+        <div class="grid grid-cols-2 gap-3">
+
+            <!-- Quantum Efficiency -->
+            <a
+                href="Photos/tandemqe.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block"
+            >
+                <div class="h-24 rounded-lg overflow-hidden bg-zinc-900 p-1.5">
+                    <img
+                        src="Photos/tandemqe.jpg"
+                        alt="Quantum efficiency of tandem solar cell"
+                        class="w-full h-full object-contain
+                               hover:scale-105
+                               transition-transform duration-300"
+                    >
+                </div>
+            </a>
+
+            <!-- J-V Characteristics -->
+            <a
+                href="Photos/tandemiv.jpg"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block"
+            >
+                <div class="h-24 rounded-lg overflow-hidden bg-zinc-900 p-1.5">
+                    <img
+                        src="Photos/tandemiv.jpg"
+                        alt="Current voltage characteristics of tandem solar cell"
+                        class="w-full h-full object-contain
+                               hover:scale-105
+                               transition-transform duration-300"
+                    >
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Project Information -->
+    <div class="p-5 pt-2">
+
+        <!-- Project Title -->
+        <h3 class="text-base font-bold text-white leading-snug">
+            Design and Performance Analysis of a Cs₃Bi₂I₉/Silicon
+            Tandem Solar Cell Using SCAPS-1D
+        </h3>
+
+        <!-- Tags -->
+        <div class="mt-3 flex flex-wrap gap-2 font-code text-[9px] text-zinc-300">
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                SCAPS-1D
+            </span>
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                Tandem Solar Cell
+            </span>
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                Cs₃Bi₂I₉
+            </span>
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                Silicon Bottom Cell
+            </span>
+
+            <span class="px-2 py-1 rounded bg-zinc-800">
+                J–V / QE Analysis
+            </span>
+
+        </div>
+
+        <!-- Description with Results -->
+        <p class="text-zinc-400 text-xs mt-4 leading-relaxed">
+            A Cs₃Bi₂I₉/silicon tandem solar cell was designed and simulated
+            using SCAPS-1D. The device achieved a J<sub>sc</sub> of
+            43.34 mA/cm², V<sub>oc</sub> of 0.80 V, fill factor of 83.9%,
+            and efficiency of 29.44% without bulk defects. When bulk defects
+            were considered, the efficiency decreased to 21.13%, mainly due
+            to reductions in V<sub>oc</sub> and fill factor.
+        </p>
+
+    </div>
+</div>
+</section>
+       <!-- Experience Section -->
+<!-- Experience Section -->
+<section
+    id="experience"
+    class="min-h-screen flex items-center py-20 px-4 sm:px-6 lg:px-8 z-10 relative"
+>
+    <div class="w-full max-w-7xl mx-auto">
+
+        <div class="mb-10">
+            <div class="inline-flex items-center gap-2 text-zinc-400 font-code text-xs tracking-widest uppercase">
+                <i class="fa-solid fa-briefcase"></i>
+                Experience Track
+            </div>
+
+            <h2 class="text-3xl font-extrabold text-white mt-1">
+                Research &amp; Professional Experience
+            </h2>
+        </div>
+
+    <!-- Experience Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+
+        <!-- Researcher -->
+        <div class="glass-panel p-5 rounded-2xl border border-zinc-800 hover:border-zinc-600 transition-all">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="text-[11px] font-code text-zinc-300">
+                    Feb 2023 – Present
+                </span>
+
+                <span class="px-2.5 py-1 rounded-md bg-zinc-800 text-zinc-200 text-[10px] font-code">
+                    Research Position
+                </span>
+            </div>
+
+            <h3 class="text-lg font-bold text-white">
+                Researcher
+            </h3>
+
+            <p class="text-xs text-zinc-400 font-medium mt-1">
+                Department of Avionics Engineering, AAUB
+            </p>
+
+            <ul class="text-zinc-300 text-xs space-y-1.5 list-disc list-inside mt-4">
+                <li>
+                    Model semiconductor devices using Silvaco TCAD, SCAPS-1D, and Ansys Lumerical.
+                </li>
+
+                <li>
+                    Analyze photovoltaic devices, nanoscale transistors, defects, doping, and interfaces.
+                </li>
+
+                <li>
+                    Generate simulation datasets for machine learning-based device optimization.
+                </li>
+
+                <li>
+                    Prepare technical analyses and journal manuscripts.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Internship Engineer -->
+        <div class="glass-panel p-5 rounded-2xl border border-zinc-800 hover:border-zinc-600 transition-all">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="text-[11px] font-code text-zinc-400">
+                    Jun 2024 – Jul 2024
+                </span>
+
+                <span class="px-2.5 py-1 rounded-md bg-zinc-800 text-zinc-300 text-[10px] font-code">
+                    Industry Internship
+                </span>
+            </div>
+
+            <h3 class="text-lg font-bold text-white">
+                Internship Engineer
+            </h3>
+
+            <p class="text-xs text-zinc-400 font-medium mt-1">
+                Biman Bangladesh Airlines, Dhaka
+            </p>
+
+            <ul class="text-zinc-300 text-xs space-y-1.5 list-disc list-inside mt-4">
+                <li>
+                    Observed aircraft continuing airworthiness management procedures.
+                </li>
+
+                <li>
+                    Studied maintenance tracking and technical documentation systems.
+                </li>
+
+                <li>
+                    Gained exposure to fleet reliability and scheduled maintenance planning.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Teaching Assistant -->
+        <div class="glass-panel p-5 rounded-2xl border border-zinc-800 hover:border-zinc-600 transition-all">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="text-[11px] font-code text-zinc-400">
+                    Jan 2024 – Dec 2024
+                </span>
+
+                <span class="px-2.5 py-1 rounded-md bg-zinc-800 text-zinc-300 text-[10px] font-code">
+                    Academic Assistant
+                </span>
+            </div>
+
+            <h3 class="text-lg font-bold text-white">
+                Teaching Assistant
+            </h3>
+
+            <p class="text-xs text-zinc-400 font-medium mt-1">
+                Department of Avionics Engineering, AAUB
+            </p>
+
+            <ul class="text-zinc-300 text-xs space-y-2 list-disc pl-5 mt-4">
+                <li>
+                    Managed course materials and academic records.
+                </li>
+
+                <li>
+                    Assisted students with circuits, signal processing, and control systems.
+                </li>
+
+                <li>
+                    Supported communication between instructors and students.
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+      
+<!-- Skills & Certifications Section -->
+<section
+    id="skills"
+    class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10 relative"
+>
+    <!-- Main Section Heading -->
+    <div class="mb-10">
+        <div class="inline-flex items-center gap-2 text-zinc-400 font-code text-xs tracking-widest uppercase">
+            <i class="fa-solid fa-sliders"></i>
+            Expertise Spectrum
+        </div>
+
+        <h2 class="text-3xl font-extrabold text-white mt-1">
+            Technical Skills &amp; Certifications
+        </h2>
+    </div>
+
+    <!-- Main Two-Column Layout -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+
+        <!-- Left Side: Technical Skills -->
+        <div>
+            <h3 class="text-xl font-bold text-white mb-5">
+                Technical Skills &amp; Software Toolkit
+            </h3>
+
+            <!-- Three Skills Per Row -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
+
+                <!-- Silvaco TCAD -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\silvaco.jpg"
+                            alt="Silvaco TCAD"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        Silvaco TCAD
+                    </h4>
+                </div>
+
+                <!-- SCAPS-1D -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\scaps.jpg"
+                            alt="SCAPS-1D"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        SCAPS-1D
+                    </h4>
+                </div>
+
+                <!-- Cadence Virtuoso -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\cadence.jpg"
+                            alt="Cadence Virtuoso"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        Cadence Virtuoso
+                    </h4>
+                </div>
+
+                <!-- Ansys Lumerical -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\ansys.jpg"
+                            alt="Ansys Lumerical"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        Ansys Lumerical
+                    </h4>
+                </div>
+
+                <!-- MATLAB / Simulink -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\matlab.jpg"
+                            alt="MATLAB and Simulink"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        MATLAB / Simulink
+                    </h4>
+                </div>
+
+                <!-- OriginPro -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\origin.jpg"
+                            alt="OriginPro"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        OriginPro
+                    </h4>
+                </div>
+
+                <!-- MICROWIND -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\microwind.jpg"
+                            alt="MICROWIND"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        MICROWIND
+                    </h4>
+                </div>
+
+                <!-- DSCH2 -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\dsch.jpg"
+                            alt="DSCH2"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        DSCH2
+                    </h4>
+                </div>
+
+                <!-- Proteus -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\proteus.jpg"
+                            alt="Proteus"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        Proteus
+                    </h4>
+                </div>
+
+                <!-- Multisim -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\multisim.jpg"
+                            alt="Multisim"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        Multisim
+                    </h4>
+                </div>
+
+                <!-- ModelSim -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\modelsim.jpg"
+                            alt="ModelSim"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        ModelSim
+                    </h4>
+                </div>
+
+                <!-- OptiSystem -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\optisystem.jpg"
+                            alt="OptiSystem"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        OptiSystem
+                    </h4>
+                </div>
+
+                <!-- C Programming -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\c.jpg"
+                            alt="C Programming"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        C Programming
+                    </h4>
+                </div>
+
+                <!-- Arduino -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\arduino.jpg"
+                            alt="Arduino"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        Arduino
+                    </h4>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\ml.jpg"
+                            alt="Machine Learning"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        Machine Learning
+                    </h4>
+                </div>
+
+                <!-- Dataset Generation -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\data.jpg"
+                            alt="Dataset Generation"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        Dataset Generation
+                    </h4>
+                </div>
+
+                <!-- LaTeX -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\latex.jpg"
+                            alt="LaTeX"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        LaTeX
+                    </h4>
+                </div>
+
+                <!-- Mendeley -->
+                <div class="glass-panel min-h-[64px] px-3 py-2 rounded-lg border border-zinc-800 flex items-center gap-3 hover:border-zinc-500 transition-all group">
+                    <div class="w-9 h-9 shrink-0 flex items-center justify-center overflow-hidden rounded-md bg-zinc-950/60">
+                        <img
+                            src="Photos\mendel.jpg"
+                            alt="Mendeley"
+                            class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform"
+                        >
+                    </div>
+
+                    <h4 class="text-[10px] font-bold text-white leading-tight">
+                        Mendeley
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Right Side: Certifications -->
+        <div>
+            <h3 class="text-xl font-bold text-white mb-5">
+                Certifications
+            </h3>
+
+            <!-- Two Certificates Per Row -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+               <!-- Digital VLSI Physical Design -->
+                <div class="glass-panel rounded-xl border border-zinc-800 overflow-hidden hover:border-zinc-500 transition-all group">
+                    <a
+                        href="YOUR_VLSI_CERTIFICATE_IMAGE_URL"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="block"
+                    >
+                        <div class="h-32 overflow-hidden bg-zinc-950">
+                            <img
+                                src="YOUR_VLSI_CERTIFICATE_IMAGE_URL"
+                                alt="Digital VLSI Physical Design Certificate"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            >
+                        </div>
+                    </a>
+
+                    <div class="p-3">
+                        <h4 class="text-[11px] font-bold text-white leading-tight">
+                            Digital VLSI Physical Design- On going
+                        </h4>
+
+                        <p class="text-[9px] text-zinc-400 mt-1">
+                            BRAC University
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ansys FDTD -->
+                <div class="glass-panel rounded-xl border border-zinc-800 overflow-hidden hover:border-zinc-500 transition-all group">
+                    <a
+                        href="Photos\lumerical_fdtd.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="block"
+                    >
+                        <div class="h-32 overflow-hidden bg-zinc-950">
+                            <img
+                                src="Photos\lumerical_fdtd.jpg"
+                                alt="Ansys Lumerical FDTD Certificate"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            >
+                        </div>
+                    </a>
+
+                    <div class="p-3">
+                        <h4 class="text-[11px] font-bold text-white leading-tight">
+                            Ansys Lumerical FDTD
+                        </h4>
+
+                        <p class="text-[9px] text-zinc-400 mt-1">
+                            Ansys
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Ansys CHARGE -->
+                <div class="glass-panel rounded-xl border border-zinc-800 overflow-hidden hover:border-zinc-500 transition-all group">
+                    <a
+                        href="Photos\lumerical_charge.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="block"
+                    >
+                        <div class="h-32 overflow-hidden bg-zinc-950">
+                            <img
+                                src="Photos\lumerical_charge.jpg"
+                                alt="Ansys Lumerical CHARGE Certificate"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            >
+                        </div>
+                    </a>
+
+                    <div class="p-3">
+                        <h4 class="text-[11px] font-bold text-white leading-tight">
+                            Ansys Lumerical CHARGE
+                        </h4>
+
+                        <p class="text-[9px] text-zinc-400 mt-1">
+                            Ansys
+                        </p>
+                    </div>
+                </div>
+
+                <!-- OptiSystem -->
+                <div class="glass-panel rounded-xl border border-zinc-800 overflow-hidden hover:border-zinc-500 transition-all group">
+                    <a
+                        href="Photos\optisystem_certificate.jpg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="block"
+                    >
+                        <div class="h-32 overflow-hidden bg-zinc-950">
+                            <img
+                                src="Photos\optisystem_certificate.jpg"
+                                alt="OptiSystem Simulation Certificate"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            >
+                        </div>
+                    </a>
+
+                    <div class="p-3">
+                        <h4 class="text-[11px] font-bold text-white leading-tight">
+                            OptiSystem Simulation
+                        </h4>
+
+                        <p class="text-[9px] text-zinc-400 mt-1">
+                            Optiwave
+                        </p>
+                    </div>
+                </div>
+
+<!-- MATLAB Onramp -->
+                <div class="glass-panel rounded-xl border border-zinc-800 overflow-hidden hover:border-zinc-500 transition-all group">
+                    <a
+                        href="Photos\matlab_certificate.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="block"
+                    >
+                        <div class="h-32 overflow-hidden bg-zinc-950">
+                            <img
+                                src="Photos\matlab_certificate.png"
+                                alt="MATLAB Onramp Certificate"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            >
+                        </div>
+                    </a>
+
+                    <div class="p-3">
+                        <h4 class="text-[11px] font-bold text-white leading-tight">
+                            MATLAB Onramp
+                        </h4>
+
+                        <p class="text-[9px] text-zinc-400 mt-1">
+                            MathWorks
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Education Section -->
+<section
+    id="education"
+    class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10 relative"
+>
+    <!-- Section Heading -->
+    <div class="mb-10">
+        <div class="inline-flex items-center gap-2 text-zinc-400 font-code text-xs tracking-widest uppercase">
+            <i class="fa-solid fa-graduation-cap"></i>
+            Academic Background
+        </div>
+
+        <h2 class="text-3xl font-extrabold text-white mt-1">
+            Education History
+        </h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+        <!-- Education Column -->
+        <div class="lg:col-span-8 space-y-6">
+
+            <!-- University Degree -->
+            <div class="glass-panel p-6 rounded-2xl border border-zinc-800 space-y-3">
+
+                <div class="flex flex-wrap justify-between items-center gap-2">
+                    <span class="text-xs font-code text-zinc-400">
+                        Jan 2022 - Mar 2026
+                    </span>
+
+                    <span class="px-3 py-1 rounded-full bg-white text-zinc-950 text-xs font-code font-bold">
+                        CGPA: 3.71 / 4.00
+                    </span>
+                </div>
+
+                <h3 class="text-xl font-bold text-white">
+                    B.Sc. in Avionics Engineering
+                </h3>
+
+                <p class="text-sm text-zinc-400 font-medium">
+                    Aviation and Aerospace University, Bangladesh (AAUB)
+                </p>
+
+                <!-- Thesis -->
+                <div class="p-4 rounded-xl bg-zinc-950/80 border border-zinc-800 text-xs space-y-1.5 text-zinc-300">
+                    <span class="text-white font-bold font-code block">
+                        THESIS TITLE:
+                    </span>
+
+                    <p class="italic">
+                        "Experimental Investigation of Soft Start and PID-Based Current Control for ESC-Driven BLDC Motors in UAV Applications"
+                    </p>
+                </div>
+
+                <!-- Coursework -->
+                <div>
+                    <span class="text-xs font-code text-zinc-400 block mb-2">
+                        RELEVANT COURSEWORK:
+                    </span>
+
+                    <div class="flex flex-wrap gap-1.5 font-code text-[11px] text-zinc-300">
+
+                        <span class="px-2 py-0.5 rounded bg-zinc-800">
+                            VLSI Design
+                        </span>
+
+                        <span class="px-2 py-0.5 rounded bg-zinc-800">
+                            Electronic Circuits
+                        </span>
+
+                        <span class="px-2 py-0.5 rounded bg-zinc-800">
+                            Digital Logic
+                        </span>
+
+                        <span class="px-2 py-0.5 rounded bg-zinc-800">
+                            Control Systems
+                        </span>
+
+                        <span class="px-2 py-0.5 rounded bg-zinc-800">
+                            Machine Learning
+                        </span>
+
+                        <span class="px-2 py-0.5 rounded bg-zinc-800">
+                            Signals &amp; Systems
+                        </span>
+
+                        <span class="px-2 py-0.5 rounded bg-zinc-800">
+                            DSP
+                        </span>
+
+                        <span class="px-2 py-0.5 rounded bg-zinc-800">
+                            Avionics System Design
+                        </span>
+
+                        <span class="px-2 py-0.5 rounded bg-zinc-800">
+                            Embedded Systems
+                        </span>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- HSC & SSC -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                <!-- HSC -->
+                <div class="glass-panel p-5 rounded-xl border border-zinc-800 space-y-1.5">
+
+                    <div class="flex justify-between items-center text-xs font-code">
+                        <span class="text-zinc-400">
+                            2018 - 2020
+                        </span>
+
+                        <span class="text-white font-bold">
+                            GPA: 5.00
+                        </span>
+                    </div>
+
+                    <h4 class="text-base font-bold text-white">
+                        Higher Secondary Certificate (HSC)
+                    </h4>
+
+                    <p class="text-xs text-zinc-400">
+                        Science &bull; BN College, Dhaka Cantt.
+                    </p>
+
+                </div>
+
+                <!-- SSC -->
+                <div class="glass-panel p-5 rounded-xl border border-zinc-800 space-y-1.5">
+
+                    <div class="flex justify-between items-center text-xs font-code">
+                        <span class="text-zinc-400">
+                            2016 - 2018
+                        </span>
+
+                        <span class="text-white font-bold">
+                            GPA: 5.00
+                        </span>
+                    </div>
+
+                    <h4 class="text-base font-bold text-white">
+                        Secondary School Certificate (SSC)
+                    </h4>
+
+                    <p class="text-xs text-zinc-400">
+                        Science &bull; Mascot Innovative College, Dhaka
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Languages Column -->
+        <div class="lg:col-span-4">
+
+            <div class="glass-panel p-5 rounded-2xl border border-zinc-800 space-y-4">
+
+                <h3 class="text-sm font-bold text-white uppercase font-code tracking-wider flex items-center gap-2">
+                    <i class="fa-solid fa-language text-zinc-400"></i>
+                    Languages Spoken
+                </h3>
+
+                <div class="space-y-3">
+
+                    <!-- Bangla -->
+                    <div class="flex justify-between items-center p-3 rounded-lg bg-zinc-950/60 border border-zinc-800">
+
+                        <div>
+                            <span class="font-bold text-white block">
+                                Bangla
+                            </span>
+
+                            <span class="text-xs text-zinc-400">
+                                Native Proficiency
+                            </span>
+                        </div>
+
+                        <span class="text-xs font-code text-white">
+                            Native
+                        </span>
+
+                    </div>
+
+                    <!-- English -->
+                    <div class="flex justify-between items-center p-3 rounded-lg bg-zinc-950/60 border border-zinc-800">
+
+                        <div>
+                            <span class="font-bold text-white block">
+                                English
+                            </span>
+
+                            <span class="text-xs text-zinc-400">
+                                Professional Proficiency
+                            </span>
+                        </div>
+
+                        <span class="text-xs font-code text-white">
+                            Professional
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+  <!-- Achievements Section -->
+<section
+    id="achievements"
+    class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10 relative"
+>
+    <!-- Section Heading -->
+    <div class="mb-10">
+        <div class="inline-flex items-center gap-2 text-zinc-400 font-code text-xs tracking-widest uppercase">
+            <i class="fa-solid fa-award"></i>
+            Recognition Portfolio
+        </div>
+
+        <h2 class="text-3xl font-extrabold text-white mt-1">
+            Scholarships, Awards &amp; Leadership
+        </h2>
+    </div>
+
+    <!-- Three Main Rows -->
+    <div class="space-y-6">
+
+        <!-- ====================================================== -->
+        <!-- Row 1: Scholarships & Academic Recognition -->
+        <!-- ====================================================== -->
+        <div class="glass-panel p-5 sm:p-6 rounded-2xl border border-zinc-800">
+
+            <!-- Row Heading -->
+            <div class="flex items-center gap-3 mb-5">
+                <i class="fa-solid fa-graduation-cap text-zinc-400 text-xl"></i>
+
+                <h3 class="text-base sm:text-xl font-bold text-white uppercase tracking-wide">
+                    Scholarships &amp; Academic Recognition
+                </h3>
+            </div>
+
+            <!-- Scholarship Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                <!-- Vice Chancellor Scholarship -->
+                <a
+                    href="Photos/VC_scholarship.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-zinc-950/70 border border-zinc-800 rounded-xl overflow-hidden group hover:border-zinc-500 transition-all"
+                >
+                    <!-- Image -->
+                    <div class="h-48 bg-zinc-900 p-2 overflow-hidden flex items-center justify-center">
+                        <img
+                            src="Photos/VC_scholarship.jpg"
+                            alt="Vice Chancellor Scholarship"
+                            class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+                        >
+                    </div>
+
+                    <!-- Information -->
+                    <div class="p-4 min-h-[126px]">
+                        <h4 class="text-sm font-bold text-white">
+                            Vice Chancellor Scholarship
+                        </h4>
+
+                        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
+                            Academic excellence in the 7th semester with a CGPA of 3.94
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-500 mt-3">
+                            Aviation and Aerospace University, Bangladesh
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-600 mt-1">
+                            2026
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Academic Excellence Award -->
+                <a
+                    href="Photos/SSC test.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-zinc-950/70 border border-zinc-800 rounded-xl overflow-hidden group hover:border-zinc-500 transition-all"
+                >
+                    <!-- Image -->
+                    <div class="h-48 bg-zinc-900 p-2 overflow-hidden flex items-center justify-center">
+                        <img
+                            src="Photos/SSC test.jpg"
+                            alt="Academic Excellence Award"
+                            class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+                        >
+                    </div>
+
+                    <!-- Information -->
+                    <div class="p-4 min-h-[126px]">
+                        <h4 class="text-sm font-bold text-white">
+                            Academic Excellence Award
+                        </h4>
+
+                        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
+                            GPA 5.00 and 1st position in the Class Ten Science Test Examination
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-500 mt-3">
+                            Mascot Innovative School &amp; College
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-600 mt-1">
+                            2017
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Certificate of Talent -->
+                <a
+                    href="Photos/PSC.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-zinc-950/70 border border-zinc-800 rounded-xl overflow-hidden group hover:border-zinc-500 transition-all"
+                >
+                    <!-- Image -->
+                    <div class="h-48 bg-zinc-900 p-2 overflow-hidden flex items-center justify-center">
+                        <img
+                            src="Photos/PSC.jpg"
+                            alt="Certificate of Talent"
+                            class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+                        >
+                    </div>
+
+                    <!-- Information -->
+                    <div class="p-4 min-h-[126px]">
+                        <h4 class="text-sm font-bold text-white">
+                            Certificate of Talent
+                        </h4>
+
+                        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
+                            Recognition for achieving GPA 5.00 in the Primary School Certificate examination
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-500 mt-3">
+                            Dhaka Sub-Editors Council
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-600 mt-1">
+                            2012
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- Row 2: Competitions & Technical Recognition -->
+        <!-- ====================================================== -->
+        <div class="glass-panel p-5 sm:p-6 rounded-2xl border border-zinc-800">
+
+            <!-- Row Heading -->
+            <div class="flex items-center gap-3 mb-5">
+                <i class="fa-solid fa-trophy text-zinc-400 text-xl"></i>
+
+                <h3 class="text-base sm:text-xl font-bold text-white uppercase tracking-wide">
+                    Competitions &amp; Technical Recognition
+                </h3>
+            </div>
+
+            <!-- Competition Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                <!-- Numerical Computation Champion -->
+                <a
+                    href="Photos/numerical comp.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-zinc-950/70 border border-zinc-800 rounded-xl overflow-hidden group hover:border-zinc-500 transition-all"
+                >
+                    <!-- Image -->
+                    <div class="h-48 bg-zinc-900 p-2 overflow-hidden flex items-center justify-center">
+                        <img
+                            src="Photos/numerical comp.jpg"
+                            alt="Numerical Computation Champion Award"
+                            class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+                        >
+                    </div>
+
+                    <!-- Information -->
+                    <div class="p-4 min-h-[126px]">
+                        <h4 class="text-sm font-bold text-white">
+                            Champion — Numerical Computation
+                        </h4>
+
+                        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
+                            IMPULSE 1.0 Aeronautical Carnival
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-500 mt-3">
+                            BSMRAAU Astro Club &amp; BSMRAAU Drone Club
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-600 mt-1">
+                            2024
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Circuitry Challenge -->
+                <a
+                    href="Photos/circuit.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-zinc-950/70 border border-zinc-800 rounded-xl overflow-hidden group hover:border-zinc-500 transition-all"
+                >
+                    <!-- Image -->
+                    <div class="h-48 bg-zinc-900 p-2 overflow-hidden flex items-center justify-center">
+                        <img
+                            src="Photos/circuit.jpg"
+                            alt="Circuitry Challenge Third Place Award"
+                            class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+                        >
+                    </div>
+
+                    <!-- Information -->
+                    <div class="p-4 min-h-[126px]">
+                        <h4 class="text-sm font-bold text-white">
+                            3rd Place — Circuitry Challenge 1.0
+                        </h4>
+
+                        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
+                            Intermediate Category
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-500 mt-3">
+                            BSMRAAU AI &amp; Robotics Club
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Thesis Poster Presentation -->
+                <a
+                    href="Photos/thesis.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-zinc-950/70 border border-zinc-800 rounded-xl overflow-hidden group hover:border-zinc-500 transition-all"
+                >
+                    <!-- Image -->
+                    <div class="h-48 bg-zinc-900 p-2 overflow-hidden flex items-center justify-center">
+                        <img
+                            src="Photos/thesis.jpg"
+                            alt="Thesis Poster Presentation Recognition"
+                            class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+                        >
+                    </div>
+
+                    <!-- Information -->
+                    <div class="p-4 min-h-[126px]">
+                        <h4 class="text-sm font-bold text-white">
+                            Thesis Poster Presentation
+                        </h4>
+
+                        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
+                            Design and Implementation of an Optimized Control Loop for UAV BLDC Motor Drives
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-500 mt-3">
+                            Department of Avionics Engineering, AAUB
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-600 mt-1">
+                            2025
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- Row 3: Leadership & Extracurricular Activities -->
+        <!-- ====================================================== -->
+        <div class="glass-panel p-5 sm:p-6 rounded-2xl border border-zinc-800">
+
+            <!-- Row Heading -->
+            <div class="flex items-center gap-3 mb-5">
+                <i class="fa-solid fa-users text-zinc-400 text-xl"></i>
+
+                <h3 class="text-base sm:text-xl font-bold text-white uppercase tracking-wide">
+                    Leadership &amp; Extracurricular Activities
+                </h3>
+            </div>
+
+            <!-- Leadership Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+                <!-- General Secretary -->
+                <a
+                    href="Photos/aaubcc.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-zinc-950/70 border border-zinc-800 rounded-xl overflow-hidden group hover:border-zinc-500 transition-all"
+                >
+                    <!-- Image -->
+                    <div class="h-48 bg-zinc-900 p-2 overflow-hidden flex items-center justify-center">
+                        <img
+                            src="Photos/aaubcc.jpg"
+                            alt="General Secretary Recognition"
+                            class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+                        >
+                    </div>
+
+                    <!-- Information -->
+                    <div class="p-4 min-h-[126px]">
+                        <h4 class="text-sm font-bold text-white">
+                            General Secretary
+                        </h4>
+
+                        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
+                            Leadership and organizational service
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-500 mt-3">
+                            AAUB Cultural Club
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-600 mt-1">
+                            2025
+                        </p>
+                    </div>
+                </a>
+
+                <!-- AAIRC Best Contributor -->
+                <a
+                    href="Photos/ai.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-zinc-950/70 border border-zinc-800 rounded-xl overflow-hidden group hover:border-zinc-500 transition-all"
+                >
+                    <!-- Image -->
+                    <div class="h-48 bg-zinc-900 p-2 overflow-hidden flex items-center justify-center">
+                        <img
+                            src="Photos/ai.jpg"
+                            alt="AAIRC Best Contributor Recognition"
+                            class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+                        >
+                    </div>
+
+                    <!-- Information -->
+                    <div class="p-4 min-h-[126px]">
+                        <h4 class="text-sm font-bold text-white">
+                            Best Contributor
+                        </h4>
+
+                        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
+                            Technical initiatives, innovation and club development
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-500 mt-3">
+                            AAUB AI &amp; Robotics Club
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-600 mt-1">
+                            2023–2025
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Cultural Club Best Contributor -->
+                <a
+                    href="Photos\aaubccc.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-zinc-950/70 border border-zinc-800 rounded-xl overflow-hidden group hover:border-zinc-500 transition-all"
+                >
+                    <!-- Image -->
+                    <div class="h-48 bg-zinc-900 p-2 overflow-hidden flex items-center justify-center">
+                        <img
+                            src="Photos\aaubccc.jpg"
+                            alt="Cultural Club Best Contributor Recognition"
+                            class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+                        >
+                    </div>
+
+                    <!-- Information -->
+                    <div class="p-4 min-h-[126px]">
+                        <h4 class="text-sm font-bold text-white">
+                            Best Contributor
+                        </h4>
+
+                        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
+                            Contribution to cultural initiatives and club development
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-500 mt-3">
+                            BSMRAAU Cultural Club
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-600 mt-1">
+                            2023
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Vice President -->
+                <a
+                    href="Photos/navians.jpg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-zinc-950/70 border border-zinc-800 rounded-xl overflow-hidden group hover:border-zinc-500 transition-all"
+                >
+                    <!-- Image -->
+                    <div class="h-48 bg-zinc-900 p-2 overflow-hidden flex items-center justify-center">
+                        <img
+                            src="Photos/navians.jpg"
+                            alt="Navians Science Club Leadership Recognition"
+                            class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+                        >
+                    </div>
+
+                    <!-- Information -->
+                    <div class="p-4 min-h-[126px]">
+                        <h4 class="text-sm font-bold text-white">
+                            Vice President
+                        </h4>
+
+                        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">
+                            Leadership and successful coordination of science activities
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-500 mt-3">
+                            Navians Science Club, Bangladesh Navy College Dhaka
+                        </p>
+
+                        <p class="text-[10px] font-code text-zinc-600 mt-1">
+                            2019
+                        </p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Photo Gallery Section -->
+<section
+    id="gallery"
+    class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10 relative"
+>
+    <!-- Section Heading -->
+    <div class="mb-10">
+        <div class="inline-flex items-center gap-2 text-zinc-400 font-code text-xs tracking-widest uppercase">
+            <i class="fa-solid fa-camera-retro"></i>
+            Visual Journey
+        </div>
+
+        <h2 class="text-3xl font-extrabold text-white mt-1">
+            Photo Gallery
+        </h2>
+    </div>
+
+    <!-- 8 Photos: 4 Per Row on Desktop -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- Photo 1: Graduation -->
+        <a
+            href="Photos/graduation.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-panel rounded-2xl border border-zinc-800 overflow-hidden group hover:border-zinc-500 transition-all"
+        >
+            <div class="h-48 overflow-hidden bg-zinc-950">
+                <img
+                    src="Photos/graduation.jpg"
+                    alt="Graduation Day"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+
+            <div class="p-3">
+                <h3 class="text-sm font-semibold text-white">
+                    Graduation Day
+                </h3>
+            </div>
+        </a>
+
+        <!-- Photo 2: Thesis Work -->
+        <a
+            href="Photos/twork.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-panel rounded-2xl border border-zinc-800 overflow-hidden group hover:border-zinc-500 transition-all"
+        >
+            <div class="h-48 overflow-hidden bg-zinc-950">
+                <img
+                    src="Photos/twork.jpg"
+                    alt="Thesis Work"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+
+            <div class="p-3">
+                <h3 class="text-sm font-semibold text-white">
+                    Thesis Work
+                </h3>
+            </div>
+        </a>
+
+        <!-- Photo 3: Poster Presentation -->
+        <a
+            href="Photos/poster.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-panel rounded-2xl border border-zinc-800 overflow-hidden group hover:border-zinc-500 transition-all"
+        >
+            <div class="h-48 overflow-hidden bg-zinc-950">
+                <img
+                    src="Photos/poster.jpg"
+                    alt="Poster Presentation"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+
+            <div class="p-3">
+                <h3 class="text-sm font-semibold text-white">
+                    Poster Presentation
+                </h3>
+            </div>
+        </a>
+
+        <!-- Photo 4: Industrial Training -->
+        <a
+            href="Photos/industy.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-panel rounded-2xl border border-zinc-800 overflow-hidden group hover:border-zinc-500 transition-all"
+        >
+            <div class="h-48 overflow-hidden bg-zinc-950">
+                <img
+                    src="Photos/industy.jpg"
+                    alt="Industrial Training Group"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+
+            <div class="p-3">
+                <h3 class="text-sm font-semibold text-white">
+                    Industrial Training Group
+                </h3>
+            </div>
+        </a>
+
+        <!-- Photo 5: Project Work -->
+        <a
+            href="Photos/project.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-panel rounded-2xl border border-zinc-800 overflow-hidden group hover:border-zinc-500 transition-all"
+        >
+            <div class="h-48 overflow-hidden bg-zinc-950">
+                <img
+                    src="Photos/project.jpg"
+                    alt="Project Work"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+
+            <div class="p-3">
+                <h3 class="text-sm font-semibold text-white">
+                    Project Work
+                </h3>
+            </div>
+        </a>
+
+        <!-- Photo 6: Solar Cell Research Team -->
+        <a
+            href="Photos/solar.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-panel rounded-2xl border border-zinc-800 overflow-hidden group hover:border-zinc-500 transition-all"
+        >
+            <div class="h-48 overflow-hidden bg-zinc-950">
+                <img
+                    src="Photos/solar.jpg"
+                    alt="Solar Cell Research Team"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+
+            <div class="p-3">
+                <h3 class="text-sm font-semibold text-white">
+                    Solar Cell Research Team
+                </h3>
+            </div>
+        </a>
+
+        <!-- Photo 7: Third Place Award -->
+        <a
+            href="Photos/third.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-panel rounded-2xl border border-zinc-800 overflow-hidden group hover:border-zinc-500 transition-all"
+        >
+            <div class="h-48 overflow-hidden bg-zinc-950">
+                <img
+                    src="Photos/third.jpg"
+                    alt="Receiving Third Place Award"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+
+            <div class="p-3">
+                <h3 class="text-sm font-semibold text-white">
+                    Receiving Third Place Award
+                </h3>
+            </div>
+        </a>
+
+        <!-- Photo 8: Numerical Competition Champion -->
+        <a
+            href="Photos/impulse.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-panel rounded-2xl border border-zinc-800 overflow-hidden group hover:border-zinc-500 transition-all"
+        >
+            <div class="h-48 overflow-hidden bg-zinc-950">
+                <img
+                    src="Photos/impulse.jpg"
+                    alt="Receiving Numerical Competition Champion Award"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+
+            <div class="p-3">
+                <h3 class="text-sm font-semibold text-white">
+                    Numerical Competition Champion
+                </h3>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+        <!-- Contact Section -->
+        <section id="contact"
+        class="relative py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto z-10">
+            <!-- Section Heading -->
+            <div class="mb-10">
+                <span class="text-xs font-code text-zinc-500 uppercase tracking-widest">Get in Touch</span>
+                <h2 class="mt-3 text-3xl md:text-4xl font-bold text-white">Contact Me</h2>
+                <p class="mt-3 text-zinc-400 max-w-2xl">
+                    Feel free to contact me regarding research, academic collaboration,
+                    semiconductor devices, VLSI, or photovoltaic systems.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Contact Information -->
+                <div class="glass-panel rounded-2xl border border-zinc-800 p-6 md:p-8">
+                    <h3 class="text-xl font-semibold text-white mb-6">Contact Information</h3>
+                    <div class="space-y-5">
+                        <!-- Address -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot text-white">
+                                </i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-code text-zinc-500 uppercase tracking-wider">Address</p>
+                                <p class="mt-1 text-zinc-200">Dhaka-1230, Bangladesh</p>
+                            </div>
+                        </div>
+                        <!-- Phone -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone text-white">
+                                </i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-code text-zinc-500 uppercase tracking-wider">Phone</p>
+                                <a href="tel:+8801885070309"
+                                class="mt-1 block text-zinc-200 hover:text-white transition-colors">+880 1885-070309</a>
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope text-white">
+                                </i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-code text-zinc-500 uppercase tracking-wider">Email</p>
+                                <a href="mailto:tahidnurrahman14@gmail.com"
+                                class="mt-1 block text-zinc-200 hover:text-white transition-colors break-all">tahidnurrahman14@gmail.com</a>
+                            </div>
+                        </div>
+                        <!-- LinkedIn -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-11 h-11 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center shrink-0">
+                                <i class="fa-brands fa-linkedin-in text-white">
+                                </i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-code text-zinc-500 uppercase tracking-wider">LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/tahid-nur-rahman"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="mt-1 block text-zinc-200 hover:text-white transition-colors break-all">linkedin.com/in/tahid-nur-rahman</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Google Map -->
+                <div class="glass-panel rounded-2xl border border-zinc-800 p-3 overflow-hidden">
+                    <iframe
+                    src="https://www.google.com/maps?q=Dhaka%201230%20Bangladesh&amp;output=embed"
+                    width="100%"
+                    height="100%"
+                    class="w-full min-h-[400px] rounded-xl border-0 grayscale contrast-110"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Dhaka, Bangladesh Location Map"></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="border-t border-zinc-800 py-10 px-4 text-center text-xs font-code text-zinc-500 z-10 relative">
+            <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div>&copy; 2026 Tahid Nur Rahman. Designed for Research & Academic Portfolio.</div>
+            </div>
+        </footer>
+        <!-- JavaScript Section -->
+        
+        
+        
+            <script src="script.js"></script>
+    </body>
+</html>
